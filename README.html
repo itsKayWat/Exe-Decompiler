@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe-Decompiler Documentation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+
+        .steps {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .coffee-btn:hover {
+            opacity: 0.9;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1a1a;
+                color: #ffffff;
+            }
+            
+            .container {
+                background: #2d2d2d;
+            }
+
+            code {
+                background: #3d3d3d;
+            }
+
+            .steps {
+                background: #3d3d3d;
+            }
+
+            h1, h2 {
+                color: #ffffff;
+                border-bottom-color: #444;
+            }
+
+            .warning {
+                background: #2d3748;
+                color: #fff;
+                border-left-color: #f6ad55;
+            }
+            
+            .warning strong {
+                color: #f6ad55;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exe-Decompiler</h1>
+        <p>A powerful GUI tool for decompiling and analyzing Electron-based executable applications.</p>
+
+        <h2>Purpose</h2>
+        <p>
+            Exe-Decompiler was created to assist developers and security researchers in analyzing, 
+            modifying, and understanding Electron-based applications. Through its user-friendly interface, 
+            users can extract, analyze, and recompile Electron applications with ease.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+            <li>Extract ASAR archives from Electron applications</li>
+            <li>Analyze source maps for better code understanding</li>
+            <li>Modify application files with built-in tools</li>
+            <li>Recompile changes back into the application</li>
+            <li>Development tools integration</li>
+            <li>Modern dark-themed GUI interface</li>
+        </ul>
+
+        <h2>System Requirements</h2>
+        <ul>
+            <li>Windows Operating System</li>
+            <li>Python 3.7 or higher</li>
+            <li>Node.js (Latest LTS version)</li>
+            <li>Administrator privileges (for certain operations)</li>
+        </ul>
+
+        <h2>Installation Guide</h2>
+        <div class="steps">
+            <ol>
+                <li>Download and install Python 3.7+ from <a href="https://python.org">python.org</a></li>
+                <li>Download and install Node.js from <a href="https://nodejs.org">nodejs.org</a></li>
+                <li>Clone this repository to your local machine</li>
+                <li>Run <code>requirements.py</code> to install all dependencies</li>
+                <li>Launch <code>exe_decompiler.py</code> to start the application</li>
+            </ol>
+        </div>
+
+        <h2>Usage Example</h2>
+        <p><strong>Scenario:</strong> Analyzing a desktop application built with Electron to understand its functionality or modify its behavior.</p>
+        
+        <div class="steps">
+            <h3>Steps:</h3>
+            <ol>
+                <li>Launch Exe-Decompiler</li>
+                <li>Browse to select the application folder</li>
+                <li>Click "Extract ASAR" to decompile</li>
+                <li>Use "Edit Files" to modify the code</li>
+                <li>Click "Recompile Changes" to rebuild</li>
+            </ol>
+        </div>
+
+        <h2>Common Use Cases</h2>
+        <ul>
+            <li>Application analysis for security research</li>
+            <li>Debugging Electron applications</li>
+            <li>Learning how applications are built</li>
+            <li>Modifying application behavior</li>
+            <li>Adding custom features to existing applications</li>
+        </ul>
+
+        <div class="warning" style="background: #2d3748; color: #fff; border-left: 4px solid #f6ad55; padding: 15px; margin: 20px 0; border-radius: 4px;">
+            <strong style="color: #f6ad55;">Important Note:</strong> Always ensure you have the legal right to modify applications before using this tool. This tool is intended for legitimate research and development purposes only.
+        </div>
+
+        <!-- Developer Signature Section -->
+        <div class="developer-section" style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee; text-align: center;">
+            <h2>Support the Developer</h2>
+            <p>👋 Hey there! I'm KayWat, the developer behind Exe-Decompiler.</p>
+            <p>If you find this tool helpful, consider buying me a coffee! ❤️</p>
+            
+            <div class="coffee-buttons" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin: 20px 0;">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=1coffee" class="coffee-btn" style="background: #0077ee; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: opacity 0.2s;">One Coffee ($6)</a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=2coffees" class="coffee-btn" style="background: #0077ee; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: opacity 0.2s;">Two Coffees ($12)</a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=J3ABMPG6MQF3L&custom=3coffees" class="coffee-btn" style="background: #0077ee; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; transition: opacity 0.2s;">Three Coffees ($24)</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
