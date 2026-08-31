@@ -2,6 +2,7 @@
 
 [![KayWat Ecosystem](https://img.shields.io/badge/KayWat-Ecosystem-0088cc?style=for-the-badge&logo=github)](https://decompiler.kaywat.codes/)
 [![Ocean Teal UI](https://img.shields.io/badge/Ocean_Teal-Security_Portal-38c0ff?style=for-the-badge)](https://decompiler.kaywat.codes/)
+[![Production Ready](https://img.shields.io/badge/Status-Production_Ready_v1.2.0-10b981?style=for-the-badge)](https://decompiler.kaywat.codes/)
 [![License: Proprietary EULA](https://img.shields.io/badge/License-Proprietary_EULA-red.svg?style=for-the-badge)](LICENSE.txt)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows_10%2F11-blue?style=for-the-badge&logo=windows)](https://microsoft.com/windows)
 
@@ -25,14 +26,18 @@ Visit our live web platform: **[https://decompiler.kaywat.codes/](https://decomp
 
 ---
 
-## 🔥 Recent Updates & Milestones (v1.1.6-beta)
+## 🔥 Project Status & Recent Milestones (v1.2.0 - Production Ready)
 
-- 📡 **Real-Time Job Monitoring & Event-Driven Streaming (`v1.1.6-beta`)**: Low-latency WebSocket job progress streaming via Redis pub/sub, sequence counter deduplication, automated backoff reconnect, visibility-aware HTTP polling fallback, granular cancellation/retry endpoints, attempt history tracking, and stalled worker recovery.
-- 🔒 **Private Paid Results Explorer (`results.html`)**: Manifest-driven, user-scoped results viewer featuring section tabs for PE Headers, PE Sections, Import Dependencies, String Inventory, PE Resources, Electron ASAR source trees, PyInstaller bytecode, Source Map restoration, Paginated Extracted Files Browser with text code preview, line numbers, copy controls, report generation, and 15-minute retention download packages.
-- 🔬 **Public Free Decompiler Explorer (`explorer.html`)**: Dogbolt-inspired multi-engine code inspection interface featuring side-by-side viewports for PE Headers, Disassembly, ASAR, PyInstaller, Strings, and Imports with 1:1 synchronized line-number gutters, per-column copy controls, real-time waiting indicators, and deep-linkable URL sessions (`?analysisId=...`).
-- 🛡️ **Cryptographic Free-Tier Rate Limiting**: Keyed HMAC-SHA256 visitor fingerprinting with dedicated `RATE_LIMIT_SECRET` to prevent rate-limit manipulation while protecting free engine queues.
-- 🎨 **Ocean Teal Security Portal**: Overhauled web portal featuring a clean layout tuned for instant binary sample submission and research.
-- 🧱 **Hardened Production SaaS Infrastructure**: Upgraded backend architecture utilizing FastAPI web services, PostgreSQL database persistence, Redis job queues, isolated background workers, and private R2 object storage.
+The Exe-Decompiler platform is **fully production ready** and actively servicing reverse engineers, security analysts, and malware researchers.
+
+- 💳 **Stripe Billing & Subscription Parity (`v1.2.0`)**: Fully integrated Stripe checkout supporting **$20.00/mo Monthly** and **$16.00/mo Annual** ($192/year) pricing tiers. Features instant session verification, automatic promotion code processing, and seamless checkout redirects.
+- ⏱️ **Job Lifecycle & Expiring Soon Scheduling**: Hardened job retention engine featuring an *Expiring Soon* timeline widget (showing jobs approaching retention windows) and non-destructive historical database indexing for perpetual lookups.
+- 🎛️ **Persistent Workspace Operations Sidepanel**: Standardized single-page app layout with persistent sidepanel metrics, quick actions, and calendar status widgets across all workspace views (`jobs`, `subscription`, `settings`, `results`).
+- 📡 **Real-Time Event Streaming & Instant Entitlements**: Low-latency WebSocket job progress streaming via Redis pub/sub with sequence deduplication, automatic reconnect backoff, polling fallback, and instant polling session verification post-checkout.
+- 🔒 **Private Paid Results Workspace (`results.html`)**: Manifest-driven, user-scoped results viewer featuring section tabs for PE Headers, PE Sections, Import Dependencies, String Inventory, PE Resources, Electron ASAR source trees, PyInstaller bytecode, Source Map restoration, Paginated Extracted Files Browser with code preview, line numbers, and download packages.
+- 🔬 **Public Free Decompiler Explorer (`explorer.html`)**: Side-by-side code inspection viewports for PE Headers, Disassembly, ASAR, PyInstaller, Strings, and Imports with 1:1 synchronized line-number gutters, per-column copy controls, and deep-linkable URL sessions (`?analysisId=...`).
+- 🛡️ **Cryptographic Free-Tier Rate Limiting**: Keyed HMAC-SHA256 visitor fingerprinting with dedicated `RATE_LIMIT_SECRET` protecting free engine queues.
+- 🧱 **Hardened Production SaaS Infrastructure**: Production backend architecture utilizing FastAPI web services, PostgreSQL database persistence, Redis job queues, isolated background workers, and private R2 object storage.
 
 ---
 
@@ -92,9 +97,11 @@ stateDiagram-v2
 - [x] **v1.1.4-beta**: Public Free Explorer (`explorer.html`), side-by-side inspection viewports, and free vs. paid results separation.
 - [x] **v1.1.5-beta**: Paid Results Explorer (`results.html`) with interactive source-map viewer and paginated file browser.
 - [x] **v1.1.6-beta**: Real-time jobs, WebSocket status streaming, automatic reconnect backoff, polling fallback, cancel/retry endpoints, and stalled worker recovery.
-- [ ] **v1.1.7-beta**: Dashboard history, account UX, search, filtering, and usage quotas.
-- [ ] **v1.2.0-beta**: Ghidra Cloud Worker integration (headless container, CPU/memory caps, decompiled C-like browser).
-- [ ] **v1.3.0-beta**: AI Reverse Engineering Assistant (LLM-powered threat summaries, variable renaming, function explanation).
+- [x] **v1.1.7-beta**: Job Lifecycle Hardening, Expiring Soon scheduling, permanent historical database index, and quota management.
+- [x] **v1.2.0**: **Production Release** — Catalog Parity ($20/mo & $16/mo Annual), instant session verification, persistent ops sidepanel layout, and platform hardening.
+- [ ] **v1.3.0**: Developer API Keys Hub & Webhook Event Automation (Coming Soon).
+- [ ] **v1.4.0**: Ghidra Cloud Worker integration (headless container, CPU/memory caps, decompiled C-like browser).
+- [ ] **v1.5.0**: AI Reverse Engineering Assistant (LLM-powered threat summaries, variable renaming, function explanation).
 
 ---
 
